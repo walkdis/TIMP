@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	unsigned int N;
+	int k, i, j;
+	unsigned char *a;
+	printf_s("the length is: ");
+	scanf_s("%u", &N);
+	a=(unsigned char*)malloc (N*sizeof(unsigned char));
+	for (i=0; i<N; i++)
+		scanf_s("%u", &a[i]);
+	for (j=0; j<(N-1); j++)
+	for (i=0; i<(N-1); i++)
+		if (a[i]>a[i+1])
+		{
+			k=a[i];
+			a[i]=a[i+1];
+			a[i+1]=k;
+		}
+for ( i=0; i<N; i++)
+ printf_s("%u ",a[i]);
+  free (a);
+system("pause");
+  return 0;
+}
