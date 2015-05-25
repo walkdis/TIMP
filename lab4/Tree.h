@@ -1,6 +1,15 @@
 #pragma once
 
-#include "Lib.h"
+#include <stdlib.h>
+#include <string.h>
+#include <string>
+#include <vector>
+#include <list>
+#include <iostream>
+
+using namespace std;
+
+#include "Tree.h"
 
 class Tree {
 public:
