@@ -1,4 +1,4 @@
-#include "Lib.h"
+#include "Tree.h"
 #define NULL 0
 
 Tree::Tree() : value(0), parent(NULL), child(NULL), childCount(0) {
