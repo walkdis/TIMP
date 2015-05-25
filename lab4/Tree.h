@@ -9,6 +9,8 @@
 
 using namespace std;
 
+#include "Tree.h"
+
 class Tree {
 private:
 	int value;
